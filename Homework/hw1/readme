@@ -1,0 +1,16 @@
+This is your readme file. Edit this file to let the user (e.g. TA) know 
+how to read/run your files/code, expected input/output, and more (if necessary). 
+
+First the user enters two lines of code which will be saved in a file named savedFile.txt 
+
+and then 
+
+The user is asked to write a name of a file the file created for test is word.txt
+for which the program will output an appropriate text . to change the output change what is in the file word.txt
+
+
+Then the program outputs the square of numbers from 1 to 100 
+
+then the program asks the user for a number and then outputs a calculation fo heads and tails ratio like the homework asks  
+
+then the program reads a file names story.txt to output the number of words, the number of unique words and then the 3 rd most frequent word in my case is "a". 

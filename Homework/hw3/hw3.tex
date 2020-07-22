@@ -1,0 +1,103 @@
+\documentclass[paper=letter, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage{enumitem}
+\usepackage{listings,multicol}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+% \fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
+%----------------------------------------------------------------------------------------
+%   TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{ 
+    \normalfont \normalsize 
+    \textsc{CS 3060 Programming Languages, Spring 2020} \\ [25pt] % Your university, school and/or department name(s)
+    \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+    \huge Assignment \#3  \\ % The assignment title
+    \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+% \author{John Smith} % Your name
+
+% \date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+    \begin{center}
+         Assignment \#3\\
+        \small CS 3060 Programming Languages, Spring 2020 \\
+        \small Instructor: S. Roy \\
+        \huge Prolog \#1
+    \end{center}
+    
+    \textbf{Due Date:} Mar 4 @ 11.59 PM. \\
+    \textbf{Total Points:} 60 points \\
+
+    \textbf{Directions:} Using the source provided via Gitlab \@ \texttt{https://gitlab.com/sanroy/sp20-cs3060-hw/},
+complete the assignment below. The process for completing this assignment should be as follows:
+
+    \begin{enumerate}[noitemsep]
+        \item You already forked the Repository ``sanroy/sp20-cs3060-hw'' to a repository ``yourId/sp20-cs3060-hw'' under your username. If not, do it now.
+        \item Get a copy of hw3 folder in ``sanroy/sp20-cs3060-hw'' repository as a hw3 folder in your repository ``yourId/sp20-cs3060-hw''
+        \item Complete the assignment, committing changes to git. Each task code should be in a separate file. As an example, task1.pl for Task 1.
+        \item Push all commits to your Gitlab repository
+        \item If you have done yet done so, sdd TA (username: pprabesh for Section 1 and username: prabeshpaudel for Section 2 of CS 3060) as a member of your Gitlab repository
+    \end{enumerate}
+
+
+
+    \textbf{Tasks:}
+    \begin{enumerate}
+
+        \item \textbf{Task \#1:} (20 points) Create a knowledge base of your choosing. This knowledge base must include 
+at least 10 items (including at least 7 facts and 3 rules) and you must come up with at least 5 querries (whereas at 
+least two querries will involve facts, at least two querries will involve rules, and at least one query will have answer 
+NO from prolog). Run the querries and show the answers (in readme) you get from Prolog. \texttt{Writing readme carries 2 points.}
+
+       \item \textbf{Task \#2:} (20 points) Write a rule that will find the smallest element of a list of integers. 
+Run at least 2 querries and show the answers (in readme) you get from Prolog. 
+Your rule should work even if there are duplicate elements, postive integers, zero, and negatives integers. \texttt{Writing readme carries 2 points.}
+
+
+        \item \textbf{Task \#3:)} (20 points) Consider the following knowledge base: 
+Interpretation of \emph{hasDirectConn(x,y)} is that there is a one-way direct flight connection from airport x to y.
+         
+        \texttt{hasDirectConn(newOrleans, chicago).\\
+        hasDirectConn(philadelphia, newOrleans).\\
+        hasDirectConn(columbus, philadelphia).\\
+        hasDirectConn(sanFrancisco, columbus).\\
+        hasDirectConn(detroit, sanFrancisco).\\
+        hasDirectConn(toledo, detroit).\\
+        hasDirectConn(houston, sanFrancisco).\\
+        } \\
+        Write a recursive rule \texttt{hasConn/2} that tells us whether there is a flight route 
+from one town A to another town B. Run at least 3 querries (one with at least 2-hop route, one with one-hop route, one with no route) 
+and show the answers (in readme) you get from Prolog. \texttt{Writing readme carries 2 point.} 
+
+    % \vspace{2cm}
+    
+    \end{enumerate}
+
+\end{document}
+
+
